@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* utilities */
+.flex{
+    display: flex;
+}
+
+/* side-bar */
+#side-bar{
+    height: calc(100vh - 100px);
+    background-color: black;
+    width: 50px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+}
+
+#side-bar .menu .logo,
+#side-bar .menu .nav,
+#side-bar .login,
+#side-bar .login i
+    {
+    padding: 5px 0;
+}
+
+ul li{
+    list-style: none;
+    margin: 15px 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav div p{
+    font-size: 12px;
+}
+
+.crea{
+    align-items: center;
+    font-size: 14px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.playlist h3{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.playlist div{
+    opacity: 0.7;
+}
+
+.nav div{
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.nav img{
+    width: 50%;
+}
+
+.add {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.add::after{
+    content: '\002B';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.login img{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    object-fit: cover;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.install{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.login hr{
+    border: solid 1px rgba(255, 255, 255, 0.7);
+}
+
+.account{
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.account p{
+    font-weight: bold;
+}
+
+.logo img:nth-child(2),
+.nav p,
+.playlist,
+.login hr,
+.login p{
+    display: none;
+}
+
+/* hover */
+.home:hover,
+.search:hover,
+.library:hover,
+.install:hover,
+.crea:hover,
+li:hover{
+    color: white;
+}
+
+.crea:hover{
+    opacity: 1.0;
+}
+
+/* responsive xs */
+
+@media screen and (min-width: 420px){
+    #side-bar{
+        width: 200px;
+        padding: 5px 10px;
+    }
+
+    .logo img:nth-child(2),
+    .nav p,
+    .playlist,
+    .login hr,
+    .login p{
+    display: inline-block;
+    }
+
+    .home{
+        border-left: 3px solid #adff2f;
+    }
+
+    .logo img:nth-child(1){
+        display: none;
+    }
+
+    .nav img{
+        width: 20%;
+    }
+
+    .nav div{
+        justify-content: flex-start;
+    }
+
+    .logo{
+        align-content: flex-start;
+    }
+
+    .logo img{
+        width: 75%;
+    }
+
+    .login{
+        width: 80%;
+        margin: 0;
+    }
+
+    .install,
+    .account{
+        padding: 5px 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .install p,
+    .account p{
+        margin-left: 10px;
+    }
+}
