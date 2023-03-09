@@ -18,119 +18,189 @@
     <title>Spotify - Lettore Web</title>
 </head>
 <body>
+    <div class="container-100vh">
+    <!-- side-bar -->
+        <div id="side-bar">
 
-    <div id="side-bar">
+            <div class="menu">
 
-        <div class="menu">
+                <div class="logo">
+                    <img src="./assets/img/logo-small.svg" alt="logo-s">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </div>
 
-            <div class="logo">
-                <img src="./assets/img/logo-small.svg" alt="logo-s">
-                <img src="./assets/img/logo.svg" alt="logo">
-            </div>
+                <div class="top">
 
-            <div class="top">
+                    <div class="nav">
 
-                <div class="nav">
+                        <div class="home flex">
+                            <a href=""><img src="./assets/img/home.svg" alt="home"></a>
+                            <a href=""><p>Home</p></a>
+                        </div>
 
-                    <div class="home flex">
-                        <img src="./assets/img/home.svg" alt="home">
-                        <p>Home</p>
+                        <div class="search flex">
+                            <a href="#"><img src="./assets/img/search.svg" alt="search"></a>
+                            <a href="#"><p>Cerca</p></a>
+                        </div>
+
+                        <div class="library flex">
+                            <a href="#"><img src="./assets/img/libreria.svg" alt="library"></a>
+                            <a href="#"><p>La tua libreria</p></a>
+                        </div>
+
+                    </div>    
+
+                    <div class="playlist">
+
+                        <h3>PLAYLIST</h3>
+                        
+                        <div class="crea flex">
+                            <a href="#">
+                                <div class="add"></div>
+                                <p>Crea Playlist</p>
+                            </a>
+
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            
+                        </ul>
+
                     </div>
 
-                    <div class="search flex">
-                        <img src="./assets/img/search.svg" alt="search">
-                        <p>Cerca</p>
-                    </div>
-
-                    <div class="library flex">
-                        <img src="./assets/img/libreria.svg" alt="library">
-                        <p>La tua libreria</p>
-                    </div>
-
-                </div>    
-
-                <div class="playlist">
-
-                    <h3>PLAYLIST</h3>
                     
-                    <div class="crea flex">
-                        <div class="add"></div>
-                        <p>Crea Playlist</p>
-                    </div>
-
-                    <ul>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                    </ul>
-
                 </div>
 
                 
+
             </div>
 
-            
+            <div class="login">
+                <div class="install flex">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <p>Installa app</p>
+                    </a>
+                </div>
+                <hr>
+                <div class="account flex">
+                    <img src="./assets/img/profile.svg" alt="profile">
+                    <p>John Doe</p>
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="login">
-            <div class="install flex">
-                <i class="fa-solid fa-arrow-down"></i>
-                <p>Installa app</p>
-            </div>
-            <hr>
-            <div class="account flex">
-                <img src="./assets/img/profile.svg" alt="profile">
-                <p>John Doe</p>
+        <!-- top-bar -->
+        <div id="top-bar">
+            <a href="#" class="btn-upgrade">EFFETTUA L'UPGRADE</a>
+
+        </div>
+
+        <!-- spotify-main -->
+        <div id="spotify-main">
+
+            <div class="genres">
+                <ul>
+                    <li><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICA</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+
             </div>
 
         </div>
 
-    </div>
+        <!-- bottom-bar -->
+        <div id="bottom-bar">
 
-    <div id="top-bar">
-        <a href="#" class="btn-upgrade">EFFETTUA L'UPGRADE</a>
+            <div class="left flex">
+                
+                <div class="now-play flex">
+                    <div class="thumbnail flex">
+                        <img src="./assets/img/sinister.jpeg" alt="">
+                    </div>
 
-    </div>
+                    <div class="song-info flex">
+                        <span>Sinister</span>
+                        <div class="flex name">
+                            <a href="#">
+                                <span>Brano</span>
+                                <span>Nome</span>
+                            </a>
+                        </div>
+                        
+                    </div>
 
-    <div id="spotify-main">
+                </div>
 
-        <div class="genres">
-            <ul>
-                <li><a href="#">IN EVIDENZA</a></li>
-                <li><a href="#">PODCAST</a></li>
-                <li><a href="#">CLASSIFICA</a></li>
-                <li><a href="#">GENERI E MOOD</a></li>
-                <li><a href="#">NUOVE USCITE</a></li>
-                <li><a href="#">SCOPRI</a></li>
-            </ul>
+                <div class="icons flex">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="center">
+
+                <div class="buttons">
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+
+                </div>
+
+                <div class="play-bar">
+                    <span>1:05</span>
+
+                    <div class="progression">
+                        <div class="point"></div>
+                    </div>
+
+                    <span>4:20</span>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <a href="#"><i class="fa-sharp fa-solid fa-list"></i></a>
+                <a href="#"><i class="fa-solid fa-display"></i></a>
+                <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                <div class="volume">
+                    <div class="point"></div>
+                </div>
+
+            </div>
 
         </div>
-
     </div>
-
-    <div id="bottom-bar">
-
-
-    </div>
-    
 </body>
 </html>
